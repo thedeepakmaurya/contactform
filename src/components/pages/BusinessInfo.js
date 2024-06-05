@@ -1,16 +1,17 @@
 import React from 'react'
 import Button from '../Button'
 
-const Profile = ({ formData, setFormData, handleChange, nextStep }) => {
+const BusinessInfo = ({formData, setFormData, handleChange, nextStep, prevStep}) => {
     return (
         <>
-            <Button/>
+            <Button />
+            {/* Form */}
             <div className=' flex flex-col items-center w-[1000px]  pt-8 h-[500px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
 
                 <div className='flex flex-col items-center w-[450px]'>
-                    <h2 className='text-xl text-indigo-200'>Step 1</h2>
-                    <h1 className='text-2xl text-indigo-900 mb-3'>Your Profile</h1>
-                    <p className='text-md text-indigo-900 text-center'>Enter the login information for your account. You will be able to create additional users after registering.</p>
+                    <h2 className='text-xl text-indigo-200'>Step 2</h2>
+                    <h1 className='text-2xl text-indigo-900 mb-3'>Business Information</h1>
+                    <p className='text-md text-indigo-900 text-center'>Please, enter information about your company</p>
                 </div>
                 <form className='w-[700px]'>
                     <div className='flex gap-6 mt-5 w-full'>
@@ -44,19 +45,21 @@ const Profile = ({ formData, setFormData, handleChange, nextStep }) => {
                         </div>
                     </div>
                 </form>
-                <div className='flex items-center justify-between w-[1000px] mt-24 pb-10'>
-                    <div>
-                        <button className='text-sky-400'><i className='bx bx-chevron-left align-middle'></i>Back to Login</button>
-                    </div>
-                    <div className='flex gap-5'>
-                        <button className='border border-indigo-400 pl-8 pr-8 pt-2 pb-2 rounded-md  bg-indigo-400 text-white' onClick={nextStep}>Next Step<i className='bx bx-chevron-right align-middle'></i></button>
-                    </div>
-                </div>
+            </div>
 
+
+            {/* Button */}
+            <div className='flex items-center justify-between w-[1000px] mt-10'>
+                <div>
+                    <button className='text-sky-400'><i className='bx bx-chevron-left align-middle'></i>Back to Login</button>
+                </div>
+                <div className='flex gap-5'>
+                    <button className='border border-indigo-400 pl-6 pr-6 pt-2 pb-2 rounded-md text-indigo-400 hover:bg-indigo-400 hover:text-white' onClick={prevStep}><i className='bx bx-chevron-left align-middle'></i>Previous Step</button>
+                    <button className='border border-indigo-400 pl-6 pr-6 pt-2 pb-2 rounded-md  bg-indigo-400 text-white' onClick={nextStep}>Next Step<i className='bx bx-chevron-right align-middle'></i></button>
+                </div>
             </div>
         </>
-
     )
 }
 
-export default Profile
+export default BusinessInfo

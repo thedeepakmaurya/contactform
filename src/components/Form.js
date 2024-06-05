@@ -23,6 +23,7 @@ const Form = () => {
         setStep(step - 1)
     }
 
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
@@ -31,11 +32,11 @@ const Form = () => {
 
     switch (step) {
         case 1:
-            return <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} />
+            return <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} setStep={setStep}/>
         case 2:
-            return <BusinessInfo formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} prevStep={prevStep} />
+            return <BusinessInfo formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} prevStep={prevStep} setStep={setStep}/>
         default:
-            <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} />
+            <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} setStep={setStep} />
     }
 
 }

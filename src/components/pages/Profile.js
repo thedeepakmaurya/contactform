@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../Button'
 
-const Profile = ({ formData, setFormData, handleChange, nextStep }) => {
+const Profile = ({ formData, setFormData, handleChange, nextStep, setStep }) => {
     return (
         <>
             <Button/>
@@ -46,7 +46,7 @@ const Profile = ({ formData, setFormData, handleChange, nextStep }) => {
                 </form>
                 <div className='flex items-center justify-between w-[1000px] mt-24 pb-10'>
                     <div>
-                        <button className='text-sky-400'><i className='bx bx-chevron-left align-middle'></i>Back to Login</button>
+                        <button className='text-sky-400'><i className='bx bx-chevron-left align-middle' onClick={() => setStep(1)}></i>Back to Login</button>
                     </div>
                     <div className='flex gap-5'>
                         <button className='border border-indigo-400 pl-8 pr-8 pt-2 pb-2 rounded-md  bg-indigo-400 text-white' onClick={nextStep}>Next Step<i className='bx bx-chevron-right align-middle'></i></button>

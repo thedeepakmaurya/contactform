@@ -1,13 +1,12 @@
-import Button from "./Button";
 import Form from "./Form";
 import Header from "./pages/Header";
+import wave from "./assets/image/wave.svg"
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      {/* <Header /> */}
-      {/* <Form /> */}
-      <Button />
+    <div className="flex flex-col items-center justify-center pt-10 bg-no-repeat bg-top" style={{backgroundImage: `url(${wave})`, backgroundSize: 'cover', width:'100%'}}>
+      <Header />
+      <Form />
     </div>
   );
 }

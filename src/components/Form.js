@@ -11,6 +11,12 @@ const Form = () => {
         phone: '',
         password: '',
         confirmPassword: '',
+        brandName: '',
+        brandType: '',
+        address: '',
+        city: '',
+        code: '',
+        tax: ''
     })
 
     const [step, setStep] = useState(1);
@@ -34,7 +40,7 @@ const Form = () => {
         case 1:
             return <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} setStep={setStep}/>
         case 2:
-            return <BusinessInfo formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} prevStep={prevStep} setStep={setStep}/>
+            return <BusinessInfo formData={formData} setFormData={setFormData} handleChange={handleChange} prevStep={prevStep} setStep={setStep}/>
         default:
             <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} setStep={setStep} />
     }

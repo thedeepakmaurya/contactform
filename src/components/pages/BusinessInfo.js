@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../Button'
 
-const BusinessInfo = ({ formData, setFormData, handleChange, nextStep, prevStep }) => {
+const BusinessInfo = ({ formData, setFormData, handleChange, prevStep }) => {
     return (
         <>
             <Button />
@@ -17,32 +17,32 @@ const BusinessInfo = ({ formData, setFormData, handleChange, nextStep, prevStep 
                     <p className='mt-10 text-md text-sky-400 '>GENERAL INFORMATION</p>
                     <div className='flex gap-6 mt-2 w-full'>
                         <div className='flex flex-col gap-2 w-1/2'>
-                            <label className='text-md text-indigo-900'>First Name</label>
-                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='firstName' value={formData.firstName} onChange={handleChange} placeholder='Input Your First Name' required />
+                            <label className='text-md text-indigo-900'>Brand Name</label>
+                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='brandName' value={formData.brandName} onChange={handleChange} placeholder='Input Your Brand Name' required />
                         </div>
                         <div className='flex flex-col gap-2 w-1/2'>
-                            <label className='text-md text-indigo-900'>Last Name</label>
-                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='lastName' value={formData.lastName} onChange={handleChange} placeholder='Input Your Last Name' required />
-                        </div>
-                    </div>
-                    <div className='flex gap-6 mt-5 w-full'>
-                        <div className='flex flex-col gap-2 w-1/2'>
-                            <label className='text-md text-indigo-900'>Email</label>
-                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='email' value={formData.email} onChange={handleChange} placeholder='Input Your Email' required />
-                        </div>
-                        <div className='flex flex-col gap-2 w-1/2'>
-                            <label className='text-md text-indigo-900'>Phone Number</label>
-                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='phone' value={formData.phone} onChange={handleChange} placeholder='Input Your Phone Number' required />
+                            <label className='text-md text-indigo-900'>Brand Name</label>
+                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='brandType' value={formData.brandType} onChange={handleChange} placeholder='Brand Type' required />
                         </div>
                     </div>
                     <div className='flex gap-6 mt-5 w-full'>
                         <div className='flex flex-col gap-2 w-1/2'>
-                            <label className='text-md text-indigo-900'>Password</label>
-                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='password' value={formData.password} onChange={handleChange} placeholder='Create Password' required />
+                            <label className='text-md text-indigo-900'>Street Address</label>
+                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='address' value={formData.address} onChange={handleChange} placeholder='Input Your Street Address' required />
                         </div>
                         <div className='flex flex-col gap-2 w-1/2'>
-                            <label className='text-md text-indigo-900'>Confirm Password</label>
-                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='confirmPassword' value={formData.confirmPassword} onChange={handleChange} placeholder='Create Your Password' required />
+                            <label className='text-md text-indigo-900'>City</label>
+                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='city' value={formData.city} onChange={handleChange} placeholder='Input City' required />
+                        </div>
+                    </div>
+                    <div className='flex gap-6 mt-5 w-full'>
+                        <div className='flex flex-col gap-2 w-1/2'>
+                            <label className='text-md text-indigo-900'>Zip Code</label>
+                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='code' value={formData.code} onChange={handleChange} placeholder='Input Zip Code' required />
+                        </div>
+                        <div className='flex flex-col gap-2 w-1/2'>
+                            <label className='text-md text-indigo-900'>Tax ID Number</label>
+                            <input className='outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='tax' value={formData.tax} onChange={handleChange} placeholder='Input Tax ID Number' required />
                         </div>
                     </div>
                 </form>
@@ -74,7 +74,7 @@ const BusinessInfo = ({ formData, setFormData, handleChange, nextStep, prevStep 
                 </div>
                 <div className='flex gap-5'>
                     <button className='border border-indigo-400 pl-6 pr-6 pt-2 pb-2 rounded-md text-indigo-400 hover:bg-indigo-400 hover:text-white' onClick={prevStep}><i className='bx bx-chevron-left align-middle'></i>Previous Step</button>
-                    <button className='border border-indigo-400 pl-6 pr-6 pt-2 pb-2 rounded-md  bg-indigo-400 text-white' onClick={nextStep}>Next Step<i className='bx bx-chevron-right align-middle'></i></button>
+                    <button className='border border-indigo-400 pl-6 pr-6 pt-2 pb-2 rounded-md  bg-indigo-400 text-white' >Next Step<i className='bx bx-chevron-right align-middle'></i></button>
                 </div>
             </div>
         </>

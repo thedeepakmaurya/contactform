@@ -17,7 +17,7 @@ const BusinessInfo = ({ formData, setFormData, handleChange, prevStep }) => {
         <>
             <Button />
             {/* Form */}
-            <div className=' flex flex-col items-center sm:w-[380px] w-[1000px]  pt-8 h-[830px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
+            <div className=' flex flex-col items-center sm:w-[380px] w-[1000px]  pt-8 sm:h-[745px] h-[830px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
 
                 <div className='flex flex-col items-center w-[450px]'>
                     <h2 className='sm:text-sm text-xl text-indigo-200'>Step 2</h2>
@@ -35,9 +35,9 @@ const BusinessInfo = ({ formData, setFormData, handleChange, prevStep }) => {
                             <div className='flex'>
                                 <label className=' sm:text-xs text-md text-indigo-900'>Brand Type</label>
                                 {/* Tooltip */}
-                                <div className="flex items-center tooltip-container relative cursor-pointer">
+                                <div className="flex items-center sm:flex-col tooltip-container relative cursor-pointer">
                                     <i className='bx bx-question-mark' undefined ></i>                                    
-                                    <div className="tooltip-content absolute text-xs z-10 w-[350px] p-2 bg-slate-800 text-white bg-opacity-50 left-5  rounded-md">
+                                    <div className="tooltip-content absolute text-xs z-10 sm:w-auto w-[350px] p-2 bg-slate-800 text-white bg-opacity-50 left-5   rounded-md">
                                         Local: Brands with distribution in 3 divisions or less OR multiple divisions but a total of 150 stores or less.
                                         <br/>
                                         <br/>
@@ -70,7 +70,7 @@ const BusinessInfo = ({ formData, setFormData, handleChange, prevStep }) => {
                     </div>
                 </form>
 
-                <div className='w-[700px] sm:pr-5 sm:w-[320px]'>
+                <div className='w-[700px] sm:pr-8 sm:pl-8 sm:w-full'>
                     <p className='sm:text-xs mt-6  text-md text-sky-400 '>DOCUMENTS</p>
                     <p className='sm:text-xs mt-2 text-indigo-900'>Once the following documents are signed, you'll be ready to get started </p>
                     <div className='flex mt-1  gap-5'>

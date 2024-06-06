@@ -44,7 +44,7 @@ const Profile = ({ formData, setFormData, handleChange, nextStep, step, setStep 
                         </div>
                     </div>
                 </form>
-                <div className='flex items-center justify-between sm:w-[380px] w-[1000px] sm:mt-20 mt-24 pb-10'>
+                <div className='flex items-center justify-between sm:w-[380px] w-[1000px] sm:mt-20 mt-28 pb-10'>
                     <div>
                         <button className='sm:text-xs text-sky-400'><i className='bx bx-chevron-left align-middle' onClick={() => setStep(1)}></i>Back to Login</button>
                     </div>

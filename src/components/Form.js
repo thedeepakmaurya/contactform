@@ -53,7 +53,7 @@ const Form = () => {
         case 1:
             return <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} step={step} setStep={setStep}/>
         case 2:
-            return <BusinessInfo formData={formData} setFormData={setFormData} handleChange={handleChange} prevStep={prevStep} setStep={setStep}/>
+            return <BusinessInfo formData={formData} setFormData={setFormData} handleChange={handleChange} prevStep={prevStep} step={step} setStep={setStep}/>
         default:
             <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} setStep={setStep} />
     }

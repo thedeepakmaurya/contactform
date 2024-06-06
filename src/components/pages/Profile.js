@@ -2,17 +2,19 @@ import React from 'react'
 import Button from '../Button'
 
 const Profile = ({ formData, setFormData, handleChange, nextStep, step, setStep }) => {
+
+
     return (
         <>
             <Button step={step} setStep={setStep}/>
-            <div className=' flex flex-col items-center w-[1000px] sm:w-[380px]  pt-8 sm:h-[410px] h-[500px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
+            <div className=' flex flex-col items-center w-[55%] sm:w-[92%]  pt-8 sm:h-[410px] h-[500px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
 
-                <div className='flex flex-col items-center sm:w-[320px] w-[450px]'>
+                <div className='flex flex-col items-center sm:w-[85%] w-[50%]'>
                     <h2 className=' sm:text-sm text-xl text-indigo-200'>Step 1</h2>
                     <h1 className='sm:text-lg text-2xl text-indigo-900 mb-3'>Your Profile</h1>
                     <p className='sm: text-xs text-md text-indigo-900 text-center'>Enter the login information for your account. You will be able to create additional users after registering.</p>
                 </div>
-                <form className='w-[700px] sm:pr-5 sm:w-[320px]'>
+                <form className='w-[70%] sm:pr-5 sm:w-[90%]'>
                     <div className='flex  gap-6 mt-5 w-full'>
                         <div className='flex flex-col gap-2  w-1/2'>
                             <label className='sm:text-xs text-md text-indigo-900'>First Name</label>
@@ -44,7 +46,7 @@ const Profile = ({ formData, setFormData, handleChange, nextStep, step, setStep 
                         </div>
                     </div>
                 </form>
-                <div className='flex items-center justify-between sm:w-[380px] w-[1000px] sm:mt-20 mt-28 pb-10'>
+                <div className='flex items-center justify-between sm:w-[92%] w-[55%] sm:mt-20 mt-28 pb-10'>
                     <div>
                         <button className='sm:text-xs text-sky-400'><i className='bx bx-chevron-left align-middle' onClick={() => setStep(1)}></i>Back to Login</button>
                     </div>

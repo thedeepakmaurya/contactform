@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import Button from '../Button';
 
-const BusinessInfo = ({ formData, setFormData, handleChange, prevStep }) => {
+const BusinessInfo = ({ formData, setFormData, step, handleChange, prevStep }) => {
+
+    console.log(step)
+
+
     const [isSigned, setIsSigned] = useState({
         agreement: true,
         waiver: false,
@@ -20,17 +24,17 @@ const BusinessInfo = ({ formData, setFormData, handleChange, prevStep }) => {
 
     return (
         <>
-            <Button />
+            <Button step={step}/>
             {/* Form */}
-            <div className='flex flex-col items-center sm:w-[380px] w-[1000px] pt-8 sm:h-[745px] h-[830px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
-                <div className='flex flex-col items-center w-[450px]'>
+            <div className='flex flex-col items-center sm:w-[92%] w-[55%] pt-8 sm:h-[745px] h-[830px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
+                <div className='flex flex-col items-center sm:w-[85%] w-[50%]'>
                     <h2 className='sm:text-sm text-xl text-indigo-200'>Step 2</h2>
                     <h1 className='sm:text-lg text-2xl text-indigo-900 mb-3'>Business Information</h1>
                     <p className='sm:text-xs text-md text-indigo-900 text-center'>
                         Please, enter information about your company
                     </p>
                 </div>
-                <form className='w-[700px] sm:pr-5 sm:w-[320px]'>
+                <form className='w-[70%] sm:pr-5 sm:w-[90%]'>
                     <p className='sm:text-xs mt-10 text-md text-sky-400 '>GENERAL INFORMATION</p>
                     <div className='flex gap-6 mt-2 w-full'>
                         <div className='flex flex-col gap-2 w-1/2'>
@@ -126,7 +130,7 @@ const BusinessInfo = ({ formData, setFormData, handleChange, prevStep }) => {
                     </div>
                 </form>
 
-                <div className='w-[700px] sm:pr-8 sm:pl-8 sm:w-full'>
+                <div className='w-[70%] sm:pr-8 sm:pl-8 sm:w-full'>
                     <p className='sm:text-xs mt-6 text-md text-sky-400 '>DOCUMENTS</p>
                     <p className='sm:text-xs mt-2 text-indigo-900'>
                         Once the following documents are signed, you'll be ready to get started
@@ -185,7 +189,7 @@ const BusinessInfo = ({ formData, setFormData, handleChange, prevStep }) => {
             </div>
 
             {/* Button */}
-            <div className='flex items-center justify-between sm:w-[380px] w-[1000px] sm:mt-8 mt-10 pb-10'>
+            <div className='flex items-center justify-between sm:w-[90%] w-[55%] sm:mt-8 mt-10 pb-10'>
                 <div>
                     <button className='sm:text-xs text-sky-400'>
                         <i className='bx bx-chevron-left align-middle'></i>Back to Login

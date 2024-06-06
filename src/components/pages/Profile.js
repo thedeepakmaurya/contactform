@@ -15,31 +15,31 @@ const Profile = ({ formData, setFormData, handleChange, nextStep, step, setStep 
                 <form className='w-[700px] sm:pr-5 sm:w-[320px]'>
                     <div className='flex  gap-6 mt-5 w-full'>
                         <div className='flex flex-col gap-2  w-1/2'>
-                            <label className='sm:text-sm text-md text-indigo-900'>First Name</label>
+                            <label className='sm:text-xs text-md text-indigo-900'>First Name</label>
                             <input className='sm:text-xs outline-none rounded-md border border-gray-300 focus:border-sky-300  p-2' type='text' name='firstName' value={formData.firstName} onChange={handleChange} placeholder='Input Your First Name' required />
                         </div>
                         <div className='flex flex-col gap-2  w-1/2'>
-                            <label className='sm:text-sm text-md text-indigo-900'>Last Name</label>
+                            <label className='sm:text-xs text-md text-indigo-900'>Last Name</label>
                             <input className='sm:text-xs outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='lastName' value={formData.lastName} onChange={handleChange} placeholder='Input Your Last Name' required />
                         </div>
                     </div>
                     <div className='flex  gap-6 mt-5 w-full'>
                         <div className='flex flex-col gap-2  w-1/2'>
-                            <label className='sm:text-sm text-md text-indigo-900'>Email</label>
+                            <label className='sm:text-xs text-md text-indigo-900'>Email</label>
                             <input className='sm:text-xs outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='email' value={formData.email} onChange={handleChange} placeholder='Input Your Email' required />
                         </div>
                         <div className='flex flex-col gap-2  w-1/2'>
-                            <label className='sm:text-sm text-md text-indigo-900'>Phone Number</label>
+                            <label className='sm:text-xs text-md text-indigo-900'>Phone Number</label>
                             <input className='sm:text-xs outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='phone' value={formData.phone} onChange={handleChange} placeholder='Input Your Phone Number' required />
                         </div>
                     </div>
                     <div className='flex  gap-6 mt-5  w-full'>
                         <div className='flex flex-col gap-2  w-1/2'>
-                            <label className='sm:text-sm text-md text-indigo-900'>Password</label>
+                            <label className='sm:text-xs text-md text-indigo-900'>Password</label>
                             <input className='sm:text-xs outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='password' value={formData.password} onChange={handleChange} placeholder='Create Password' required />
                         </div>
                         <div className='flex flex-col gap-2  w-1/2'>
-                            <label className='sm:text-sm text-md text-indigo-900'>Confirm Password</label>
+                            <label className='sm:text-xs text-md text-indigo-900'>Confirm Password</label>
                             <input className='sm:text-xs outline-none rounded-md border border-gray-300 focus:border-sky-300 p-2' type='text' name='confirmPassword' value={formData.confirmPassword} onChange={handleChange} placeholder='Create Your Password' required />
                         </div>
                     </div>

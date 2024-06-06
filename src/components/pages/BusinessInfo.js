@@ -50,9 +50,9 @@ const BusinessInfo = ({ formData, setFormData, handleChange, prevStep }) => {
                                 <label className='sm:text-xs text-md text-indigo-900'>Brand Type</label>
                                 {/* Tooltip */}
                                 <div className='flex items-center sm:flex-col tooltip-container relative cursor-pointer' onClick={toggleTooltip}>
-                                    <i className=' bg-slate-500 rounded-full ml-2 text-white bx bx-question-mark'></i>
+                                    <i className=' bg-slate-500 sm:text-xs rounded-full ml-2 sm:h-3  sm:w-3 text-white bx bx-question-mark'></i>
                                     {tooltipVisible && (
-                                        <div className='tooltip-content absolute text-xs z-10 sm:w-auto w-[350px] ml-2 p-2 bg-slate-800 text-white bg-opacity-50 left-5 rounded-md'>
+                                        <div className='tooltip-content absolute text-xs z-10 sm:-translate-x-56 sm:translate-y-4 sm:w-72 w-[350px] ml-2 p-2 bg-slate-800 text-white bg-opacity-50 left-5 rounded-md'>
                                             Local: Brands with distribution in 3 divisions or less OR multiple divisions but a total of 150 stores or less.
                                             <br />
                                             <br />

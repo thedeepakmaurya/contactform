@@ -49,7 +49,7 @@ const Profile = ({ formData, setFormData, handleChange, nextStep, step, setStep 
                         <button className='sm:text-xs text-sky-400'><i className='bx bx-chevron-left align-middle' onClick={() => setStep(1)}></i>Back to Login</button>
                     </div>
                     <div className='flex gap-5'>
-                        <button className='sm:text-xs border border-indigo-400 sm:pl-4 sm:pt-1 sm:pb-1 sm:pr-4 pl-8 pr-8 pt-2 pb-2 rounded-md  bg-indigo-400 text-white' onClick={nextStep}>Next Step<i className='bx bx-chevron-right align-middle'></i></button>
+                        <button className='sm:text-xs border border-indigo-400 sm:pl-4 sm:pt-[5px] sm:pb-[5px] sm:pr-4 pl-8 pr-8 pt-2 pb-2 rounded-md  bg-indigo-400 text-white' onClick={nextStep}>Next Step<i className='bx bx-chevron-right align-middle'></i></button>
                     </div>
                 </div>
 

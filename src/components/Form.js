@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import BusinessInfo from './pages/BusinessInfo'
 import Profile from './pages/Profile';
+import { useEffect } from 'react';
 
 const Form = () => {
 
@@ -18,6 +19,18 @@ const Form = () => {
         code: '',
         tax: ''
     })
+
+    useEffect(() => {
+        const storedFormData = localStorage.getItem('formData');
+        if (storedFormData) {
+            setFormData(JSON.parse(storedFormData));
+        }
+    }, []);
+
+    // Save form data to local storage whenever it changes
+    useEffect(() => {
+        localStorage.setItem('formData', JSON.stringify(formData));
+    }, [formData]);
 
     const [step, setStep] = useState(1);
 
@@ -38,7 +51,7 @@ const Form = () => {
 
     switch (step) {
         case 1:
-            return <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} setStep={setStep}/>
+            return <Profile formData={formData} setFormData={setFormData} handleChange={handleChange} nextStep={nextStep} step={step} setStep={setStep}/>
         case 2:
             return <BusinessInfo formData={formData} setFormData={setFormData} handleChange={handleChange} prevStep={prevStep} setStep={setStep}/>
         default:

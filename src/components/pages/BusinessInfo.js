@@ -3,9 +3,6 @@ import Button from '../Button';
 
 const BusinessInfo = ({ formData, setFormData, step, handleChange, prevStep }) => {
 
-    console.log(step)
-
-
     const [isSigned, setIsSigned] = useState({
         agreement: true,
         waiver: false,

@@ -12,7 +12,7 @@ const Profile = ({ formData, setFormData, handleChange, nextStep, step, setStep 
                     <h1 className='sm:text-lg text-2xl text-indigo-900 mb-3'>Your Profile</h1>
                     <p className='sm: text-xs text-md text-indigo-900 text-center'>Enter the login information for your account. You will be able to create additional users after registering.</p>
                 </div>
-                <form className='w-[700px] sm:w-[320px]'>
+                <form className='w-[700px] sm:pr-5 sm:w-[320px]'>
                     <div className='flex  gap-6 mt-5 w-full'>
                         <div className='flex flex-col gap-2  w-1/2'>
                             <label className='sm:text-sm text-md text-indigo-900'>First Name</label>

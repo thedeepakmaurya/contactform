@@ -6,7 +6,7 @@ const Profile = ({ formData, setFormData, handleChange, nextStep, step, setStep 
 
     return (
         <>
-            <Button step={step} setStep={setStep}/>
+            <Button step={step} setStep={setStep} />
             <div className=' flex flex-col items-center w-[55%] sm:w-[92%]  pt-8 sm:h-[410px] h-[500px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
 
                 <div className='flex flex-col items-center sm:w-[85%] w-[50%]'>
@@ -46,15 +46,15 @@ const Profile = ({ formData, setFormData, handleChange, nextStep, step, setStep 
                         </div>
                     </div>
                 </form>
-                <div className='flex items-center justify-between sm:w-[92%] w-[55%] sm:mt-20 mt-28 pb-10'>
-                    <div>
-                        <button className='sm:text-xs text-sky-400'><i className='bx bx-chevron-left align-middle' onClick={() => setStep(1)}></i>Back to Login</button>
-                    </div>
-                    <div className='flex gap-5'>
-                        <button className='sm:text-xs border border-indigo-400 sm:pl-4 sm:pt-[5px] sm:pb-[5px] sm:pr-4 pl-8 pr-8 pt-2 pb-2 rounded-md  bg-indigo-400 text-white' onClick={nextStep}>Next Step<i className='bx bx-chevron-right align-middle'></i></button>
-                    </div>
-                </div>
 
+            </div>
+            <div className='flex items-center justify-between sm:w-[92%] w-[55%] sm:mt-8 mt-10 pb-10'>
+                <div>
+                    <button className='sm:text-xs text-sky-400'><i className='bx bx-chevron-left align-middle' onClick={() => setStep(1)}></i>Back to Login</button>
+                </div>
+                <div className='flex gap-5'>
+                    <button className='sm:text-xs border border-indigo-400 sm:pl-4 sm:pt-[5px] sm:pb-[5px] sm:pr-4 pl-8 pr-8 pt-2 pb-2 rounded-md  bg-indigo-400 text-white' onClick={nextStep}>Next Step<i className='bx bx-chevron-right align-middle'></i></button>
+                </div>
             </div>
         </>
 

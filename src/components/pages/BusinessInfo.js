@@ -23,7 +23,7 @@ const BusinessInfo = ({ formData, setFormData, step, handleChange, prevStep }) =
         <>
             <Button step={step}/>
             {/* Form */}
-            <div className='flex flex-col items-center sm:w-[92%] w-[55%] pt-8 sm:h-[745px] h-[830px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
+            <div className='flex flex-col items-center sm:w-[92%] w-[55%] pt-8 pb-10 h-auto bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
                 <div className='flex flex-col items-center sm:w-[85%] w-[50%]'>
                     <h2 className='sm:text-sm text-xl text-indigo-200'>Step 2</h2>
                     <h1 className='sm:text-lg text-2xl text-indigo-900 mb-3'>Business Information</h1>
@@ -50,10 +50,10 @@ const BusinessInfo = ({ formData, setFormData, step, handleChange, prevStep }) =
                             <div className='flex'>
                                 <label className='sm:text-xs text-md text-indigo-900'>Brand Type</label>
                                 {/* Tooltip */}
-                                <div className='flex items-center sm:flex-col tooltip-container relative cursor-pointer' onClick={toggleTooltip}>
+                                <div className='flex items-center sm:flex-col relative cursor-pointer' onClick={toggleTooltip}>
                                     <i className=' bg-slate-500 sm:text-xs rounded-full ml-2 sm:h-3  sm:w-3 text-white bx bx-question-mark'></i>
                                     {tooltipVisible && (
-                                        <div className='tooltip-content absolute text-xs z-10 sm:-translate-x-56 sm:translate-y-4 sm:w-72 w-[350px] ml-2 p-2 bg-slate-800 text-white bg-opacity-50 left-5 rounded-md'>
+                                        <div className=' absolute text-xs z-10 sm:-translate-x-56 sm:translate-y-4 sm:w-72 w-[350px] ml-2 p-2 bg-slate-800 text-white bg-opacity-50 left-5 rounded-md'>
                                             Local: Brands with distribution in 3 divisions or less OR multiple divisions but a total of 150 stores or less.
                                             <br />
                                             <br />
@@ -177,7 +177,7 @@ const BusinessInfo = ({ formData, setFormData, step, handleChange, prevStep }) =
                                     <i className='bx bx-x bx-sm align-middle' style={{ color: '#ff0000' }}></i>
                                 )}
                             </span>
-                        </p>{' '}
+                        </p>
                         <span className='border border-indigo-400 bg-indigo-400 text-white p-2 pl-3 pr-3 rounded-md'>
                             <i className='bx bx-chevron-right align-middle'></i>
                         </span>

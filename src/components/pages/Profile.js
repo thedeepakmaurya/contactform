@@ -7,7 +7,7 @@ const Profile = ({ formData, setFormData, handleChange, nextStep, step, setStep 
     return (
         <>
             <Button step={step} setStep={setStep} />
-            <div className=' flex flex-col items-center w-[55%] sm:w-[92%]  pt-8 sm:h-[410px] h-[500px] bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
+            <div className=' flex flex-col items-center w-[55%] sm:w-[92%]  pt-8 pb-10 h-auto bg-white shadow-xl shadow-gray-400 rounded-b-xl'>
 
                 <div className='flex flex-col items-center sm:w-[85%] w-[50%]'>
                     <h2 className=' sm:text-sm text-xl text-indigo-200'>Step 1</h2>
